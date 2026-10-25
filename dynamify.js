@@ -1,4 +1,7 @@
 const MVC = {
+    Model : {
+    }
+    ,
     Controller : {
         torrents : require("../controller/torrents.js"),
         Category : require("../controller/Category.js"),
