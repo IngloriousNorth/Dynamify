@@ -1,4 +1,4 @@
-export default MHC = {
+const MHC = {
     Controller : {
         torrents : require("../controller/torrents.js"),
         Category : require("../controller/Category.js"),
@@ -9,6 +9,7 @@ export default MHC = {
         Category : require("../hook/Category.js")
     }
 } 
+export default MHC;
 
 //from /src/controller
 import MHC from './src/MHC'
