@@ -4,7 +4,6 @@ const MVC = {
         graph: require("../model/graph"),
         hero: require("../model/hero"),
         recommendation: require("../model/recommendation"),
-        torrents: require("../model/torrents"),
     },
     Hook: {
         node: require("../hook/node"),
