@@ -22,14 +22,14 @@ MVC.Hook.graph.showDiv();
 //page change
 MVC.Controller.search.promptUser();
 
-//in TEMPEST helm config:
+//if using TEMPEST router: in helm config:
 ```
     {
         page: "Category",
         fn: function() {           
-            MVC.Controller[TEMPEST.pageREC()].List();
+            MVC.Controller[TEMPEST.pageREC()].List();//calls List whenever #Category accessed
     }
 ```
-                    }
+                    
 
 export default MVC;
