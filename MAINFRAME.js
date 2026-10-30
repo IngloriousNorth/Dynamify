@@ -28,7 +28,6 @@ const MVC = {
 };
 
 export default MVC;
-```
 
 //MAINFRAME... with Browserify
 const MVC = {
@@ -48,20 +47,22 @@ const MVC = {
     }
 };
 
+export default MVC;
+
+
+//other script
+import MVC from "client/lib/MAINFRAME.js"
 //now on event:
 MVC.Hook.graph.showDiv();
 
 //page change
 MVC.Controller.search.promptUser();
 
-//if using TEMPEST router: in helm config:
-```
+//if using TEMPLAR-Router, in helm config:
     {
         page: "Category",
         fn: function() {           
             MVC.Controller[TEMPEST.pageREC()].List();//calls List whenever #Category accessed
     }
-```
                     
 
-export default MVC;
